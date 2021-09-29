@@ -17,7 +17,7 @@ GPIO.setup(CS_ADC, GPIO.OUT)
 # Function to read SPI data from MCP3008 chip
 # Channel must be an integer 0-7
 def ReadChannel3008(channel):
-  #below sends 00000001 1xxx0000 00000000 to the chip and records the response
+  #below code sends 00000001 1xxx0000 00000000 to the chip and records the response
   #xxx encodes 0-7, the channel selected for the transfer.
   adc = spi.xfer2([1,(8+channel)<<4,0])
   data = ((adc[1]&3) << 8) + adc[2] 
