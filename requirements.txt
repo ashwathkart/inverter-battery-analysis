@@ -27,7 +27,7 @@ pytz==2021.1
 pywin32==301
 pyzmq==22.3.0
 regex==2021.10.8
-sqlparse==0.4.1
+sqlparse==0.4.2
 threadpoolctl==2.2.0
 tornado==6.1
 tqdm==4.62.3
