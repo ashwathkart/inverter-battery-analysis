@@ -8,7 +8,7 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BCM)
 
 #connect to database, change the ip address in host, accordingly if db is in cloud
-mydb = mysql.connector.connect(host = 'localhost', user = "ashwath", passwd = 'Avaritia@123', database = 'Inverter', auth_plugin='mysql_native_password')
+mydb = mysql.connector.connect(host = 'localhost', user = "username", passwd = "password", database = "your_db", auth_plugin='mysql_native_password')
 mycursor = mydb.cursor()
 
 #open SPI bus
