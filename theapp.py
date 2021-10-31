@@ -8,7 +8,7 @@ def battery(request):
     from datetime import datetime as dt
     from datetime import timedelta as delta
 
-    mydb = mysql.connector.connect(host = 'localhost', user = "ashwath", passwd = 'Avaritia@123', database = 'test', auth_plugin='mysql_native_password')
+    mydb = mysql.connector.connect(host = 'localhost', user = "username", passwd = 'password', database = 'mydb', auth_plugin='mysql_native_password')
 
     #battery table
     battery_cursor = mydb.cursor()
